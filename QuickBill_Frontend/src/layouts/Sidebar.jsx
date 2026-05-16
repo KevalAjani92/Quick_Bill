@@ -5,6 +5,7 @@ import {
   Package,
   ShoppingCart,
   ClipboardList,
+  FileSpreadsheet,
   Zap,
   ChevronLeft,
 } from 'lucide-react';
@@ -14,6 +15,7 @@ const navItems = [
   { to: '/products', label: 'Products', icon: Package },
   { to: '/pos', label: 'Billing / POS', icon: ShoppingCart },
   { to: '/orders', label: 'Orders', icon: ClipboardList },
+  { to: '/reports', label: 'Reports', icon: FileSpreadsheet },
 ];
 
 export default function Sidebar({ collapsed, onToggle }) {

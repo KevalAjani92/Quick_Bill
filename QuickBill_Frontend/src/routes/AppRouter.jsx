@@ -8,6 +8,7 @@ import ProductsPage from '../pages/ProductsPage';
 import PosPage from '../pages/PosPage';
 import OrdersPage from '../pages/OrdersPage';
 import InvoicePage from '../pages/InvoicePage';
+import ReportsPage from '../pages/ReportsPage';
 
 export default function AppRouter() {
   return (
@@ -24,6 +25,7 @@ export default function AppRouter() {
             <Route path="/pos" element={<PosPage />} />
             <Route path="/orders" element={<OrdersPage />} />
             <Route path="/invoices/:id" element={<InvoicePage />} />
+            <Route path="/reports" element={<ReportsPage />} />
           </Route>
         </Route>
 
