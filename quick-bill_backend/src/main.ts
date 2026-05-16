@@ -13,7 +13,7 @@ async function bootstrap() {
     origin: [
       'http://localhost:5173',
       'http://localhost:3000',
-      'https://quick-bill-one.vercel.app/',
+      'https://quick-bill-sandy.vercel.app/',
     ],
     credentials: true,
   });
