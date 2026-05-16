@@ -10,7 +10,11 @@ async function bootstrap() {
 
   // Enable CORS for frontend dev server
   app.enableCors({
-    origin: ['http://localhost:5173', 'http://localhost:3000'],
+    origin: [
+      'http://localhost:5173',
+      'http://localhost:3000',
+      'https://quick-bill-one.vercel.app/',
+    ],
     credentials: true,
   });
 
@@ -25,6 +29,8 @@ async function bootstrap() {
   );
 
   await app.listen(process.env.PORT ?? 3000);
-  console.log(`🚀 QuickBill API running on http://localhost:${process.env.PORT ?? 3000}/api`);
+  console.log(
+    `🚀 QuickBill API running on http://localhost:${process.env.PORT ?? 3000}/api`,
+  );
 }
 bootstrap();
